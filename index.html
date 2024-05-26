@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Modern UI Website</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">MySite</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <select id="theme-select">
+                        <option value="default">Default</option>
+                        <option value="dark">Dark</option>
+                        <option value="light">Light</option>
+                    </select>
+                </li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+    <section id="home" class="fade-in">
+        <div class="hero-content">
+            <h1>Welcome to MySite</h1>
+            <p>Experience modern web design with a sleek and responsive interface.</p>
+            <button class="cta" id="get-started">Get Started</button>
+        </div>
+    </section>
+    <section id="about" class="slide-in-left">
+        <h2>About Us</h2>
+        <p>Learn more about our mission and values.</p>
+    </section>
+    <section id="services" class="slide-in-right">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+            <div class="card">
+                <h3>Web Design</h3>
+                <p>Beautiful and responsive web designs to showcase your brand.</p>
+                <button class="learn-more" data-section="#portfolio">Learn More</button>
+            </div>
+            <div class="card">
+                <h3>Development</h3>
+                <p>Robust and scalable web applications tailored to your needs.</p>
+                <button class="learn-more" data-section="#portfolio">Learn More</button>
+            </div>
+            <div class="card">
+                <h3>SEO</h3>
+                <p>Optimize your site for better visibility on search engines.</p>
+                <button class="learn-more" data-section="#portfolio">Learn More</button>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio" class="zoom-in">
+        <h2>Our Work</h2>
+        <div class="portfolio-gallery">
+            <div class="portfolio-item">Project 1</div>
+            <div class="portfolio-item">Project 2</div>
+            <div class="portfolio-item">Project 3</div>
+            <div class="portfolio-item">Project 4</div>
+        </div>
+    </section>
+    <section id="contact" class="fade-in-up">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <textarea id="message" placeholder="Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 MySite. All rights reserved.</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

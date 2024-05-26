@@ -1,0 +1,25 @@
+/* theme.css */
+
+:root {
+    --primary-bg: #333;
+    --primary-text: #fff;
+    --secondary-bg: #fff;
+    --accent-bg: #ff6347;
+    --accent-hover: #e5533d;
+}
+
+body.light {
+    --primary-bg: #f4f4f4;
+    --primary-text: #333;
+    --secondary-bg: #fff;
+    --accent-bg: #007bff;
+    --accent-hover: #0056b3;
+}
+
+body.dark {
+    --primary-bg: #222;
+    --primary-text: #ddd;
+    --secondary-bg: #333;
+    --accent-bg: #ff5722;
+    --accent-hover: #e64a19;
+}

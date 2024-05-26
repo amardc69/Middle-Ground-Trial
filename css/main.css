@@ -1,0 +1,235 @@
+/* main.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: #f4f4f4;
+}
+
+header {
+    background: var(--primary-bg);
+    color: var(--primary-text);
+    padding: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 1rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    margin-left: 1rem;
+}
+
+.nav-links a {
+    color: var(--primary-text);
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.nav-links select {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    background: var(--secondary-bg);
+    color: var(--primary-text);
+    font-size: 1rem;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background: var(--primary-text);
+}
+
+.hero-content {
+    text-align: center;
+    padding: 4rem 1rem;
+    background: var(--secondary-bg);
+    color: var(--primary-text);
+    margin-top: 60px;
+    border-radius: 0 0 50px 50px;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.cta {
+    padding: 0.7rem 2rem;
+    background: var(--accent-bg);
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.cta:hover {
+    background: var(--accent-hover);
+}
+
+.learn-more {
+    padding: 0.5rem 1rem;
+    background: var(--accent-bg);
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.3s;
+}
+
+.learn-more:hover {
+    background: var(--accent-hover);
+}
+
+section {
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+#services .service-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: var(--secondary-bg);
+    padding: 1.5rem;
+    margin: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    flex: 1 0 30%;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+#portfolio .portfolio-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    background: var(--secondary-bg);
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    flex: 1 0 45%;
+    transition: transform 0.3s;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+}
+
+#contact form {
+    max-width: 600px;
+    margin: auto;
+    background: var(--secondary-bg);
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    padding: 0.7rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: var(--primary-bg);
+    color: var(--primary-text);
+}
+
+#contact button {
+    padding: 0.7rem 2rem;
+    background: var(--accent-bg);
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#contact button:hover {
+    background: var(--accent-hover);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: var(--primary-bg);
+    color: var(--primary-text);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    #services .service-cards, #portfolio .portfolio-gallery {
+        flex-direction: column;
+    }
+
+    .card, .portfolio-item {
+        flex: 1 0 100%;
+    }
+}
